@@ -49,6 +49,24 @@ const frameIn = [
         },
         component: _import('demo/page3')
       },
+      {
+        path: '/page-demo',
+        name: 'page-demo',
+        component: () => import('@/pages/page-demo'),
+        meta: {
+          auth: true,
+          title: '新建示例'
+        }
+      },
+      {
+        path: 'all',
+        name: 'all',
+        meta: {
+          title: '商品',
+          auth: true
+        },
+        component: _import('product/all')
+      },
       // 系统 前端日志
       {
         path: 'log',

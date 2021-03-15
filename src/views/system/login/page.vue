@@ -15,9 +15,9 @@
         class="page-login--content"
         flex="dir:top main:justify cross:stretch box:justify">
         <div class="page-login--content-header">
-          <p class="page-login--content-header-motto">
+          <!-- <p class="page-login--content-header-motto">
             时间是一切财富中最宝贵的财富
-          </p>
+          </p> -->
         </div>
         <div
           class="page-login--content-main"
@@ -49,7 +49,7 @@
                     <i slot="prepend" class="fa fa-keyboard-o"></i>
                   </el-input>
                 </el-form-item>
-                <el-form-item prop="code">
+                <!-- <el-form-item prop="code">
                   <el-input
                     type="text"
                     v-model="formLogin.code"
@@ -58,7 +58,7 @@
                       <img class="login-code" src="./image/login-code.png">
                     </template>
                   </el-input>
-                </el-form-item>
+                </el-form-item> -->
                 <el-button
                   size="default"
                   @click="submit"
@@ -72,12 +72,12 @@
               class="page-login--options"
               flex="main:justify cross:center">
               <span><d2-icon name="question-circle"/> 忘记密码</span>
-              <span>注册用户</span>
+              <!-- <span>注册用户</span> -->
             </p>
             <!-- quick login -->
-            <el-button class="page-login--quick" size="default" type="info" @click="dialogVisible = true">
+            <!-- <el-button class="page-login--quick" size="default" type="info" @click="dialogVisible = true">
               快速选择用户（测试功能）
-            </el-button>
+            </el-button> -->
           </div>
         </div>
         <div class="page-login--content-footer">
@@ -92,10 +92,10 @@
           <p class="page-login--content-footer-copyright">
             Copyright
             <d2-icon name="copyright"/>
-            2018 D2 Projects 开源组织出品
-            <a href="https://github.com/FairyEver">
+            2021 成都啸天电子有限公司
+            <!-- <a href="https://github.com/FairyEver">
               @FairyEver
-            </a>
+            </a> -->
           </p>
           <p class="page-login--content-footer-options">
             <a href="#">帮助</a>
@@ -105,7 +105,7 @@
         </div>
       </div>
     </div>
-    <el-dialog
+    <!-- <el-dialog
       title="快速选择用户"
       :visible.sync="dialogVisible"
       width="400px">
@@ -117,7 +117,7 @@
           </div>
         </el-col>
       </el-row>
-    </el-dialog>
+    </el-dialog> -->
   </div>
 </template>
 
@@ -253,12 +253,12 @@ export default {
     overflow: hidden;
   }
   // 时间
-  .page-login--layer-time {
-    font-size: 24em;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.03);
-    overflow: hidden;
-  }
+  // .page-login--layer-time {
+  //   font-size: 24em;
+  //   font-weight: bold;
+  //   color: rgba(0, 0, 0, 0.03);
+  //   overflow: hidden;
+  // }
   // 登陆页面控件的容器
   .page-login--content {
     height: 100%;
@@ -290,6 +290,7 @@ export default {
     }
     // 登录按钮
     .button-login {
+      background-color: #129c3c;
       width: 100%;
     }
     // 输入框左边的图表区域缩窄
@@ -308,38 +309,39 @@ export default {
       margin: 0px;
       padding: 0px;
       font-size: 14px;
-      color: $color-primary;
+      color: $color-forget;
       margin-bottom: 15px;
-      font-weight: bold;
+      justify-content: center;
+      // font-weight: bold;
     }
     .page-login--quick {
       width: 100%;
     }
   }
   // 快速选择用户面板
-  .page-login--quick-user {
-    @extend %flex-center-col;
-    padding: 10px 0px;
-    border-radius: 4px;
-    &:hover {
-      background-color: $color-bg;
-      i {
-        color: $color-text-normal;
-      }
-      span {
-        color: $color-text-normal;
-      }
-    }
-    i {
-      font-size: 36px;
-      color: $color-text-sub;
-    }
-    span {
-      font-size: 12px;
-      margin-top: 10px;
-      color: $color-text-sub;
-    }
-  }
+  // .page-login--quick-user {
+  //   @extend %flex-center-col;
+  //   padding: 10px 0px;
+  //   border-radius: 4px;
+  //   &:hover {
+  //     background-color: $color-bg;
+  //     i {
+  //       color: $color-text-normal;
+  //     }
+  //     span {
+  //       color: $color-text-normal;
+  //     }
+  //   }
+  //   i {
+  //     font-size: 36px;
+  //     color: $color-text-sub;
+  //   }
+  //   span {
+  //     font-size: 12px;
+  //     margin-top: 10px;
+  //     color: $color-text-sub;
+  //   }
+  // }
   // footer
   .page-login--content-footer {
     padding: 1em 0;
